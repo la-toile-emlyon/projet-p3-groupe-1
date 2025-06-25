@@ -1,1 +1,479 @@
-/* Le code CSS spécifique à la page de documentation */
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000000;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-bottom: 25px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #8815e6;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hero {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 40px;
+  max-width: 1200px;
+  margin-inline: 260px;
+}
+
+.illustration {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex: 1 1 90%;
+  text-align: center;
+}
+
+.illustration img {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  margin-left: -47px;
+}
+
+#flechesLogo {
+  margin-bottom: 242px;
+}
+.contenu {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: #8c4be6;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.slogan {
+  color: #8c4be6;
+  font-style: italic;
+  margin-top: -10px;
+  font-size: 1rem;
+}
+
+.numero-page {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+}
+.section-cibles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  flex-direction: row;
+}
+
+.section-cibles .illustration {
+  flex: 1 1 40%;
+  text-align: right;
+  margin-left: -130px;
+}
+
+.section-cibles .illustration img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.section-cibles .contenu {
+  flex: 1 1 45%;
+  text-align: right;
+}
+
+.section-cibles .numero-page {
+  text-align: right;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px;
+  float: right;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.section-cibles .tag {
+  display: inline-block;
+  background-color: #8c4be6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-cibles h1 {
+  font-size: 2.5rem;
+  margin: 10px 0 5px;
+}
+
+.section-cibles h2 {
+  font-size: 1.1rem;
+  color: #6e00e6;
+  margin-bottom: 20px;
+}
+
+.section-cibles p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section-cibles3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  flex-direction: row-reverse;
+}
+
+.illustration3 {
+  flex: 1 1 45%;
+  text-align: right;
+}
+
+.illustration3 img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.contenu3 {
+  flex: 1 1 45%;
+}
+
+.numero-page3 {
+  text-align: right;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.tag3 {
+  display: inline-block;
+  background-color: #8c4be6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.titre3 {
+  font-size: 2.5rem;
+  margin: 10px 0 5px;
+}
+
+.contenu3 p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section-personna4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.illustration4 {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.illustration4 img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.contenu4 {
+  flex: 1 1 45%;
+}
+
+.numero-page4 {
+  text-align: right;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.tag4 {
+  display: inline-block;
+  background-color: #8c4be6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.titre4 {
+  font-size: 2.5rem;
+  margin: 10px 0 5px;
+}
+
+.liste4 {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.section-evolution5 {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.numero-page5 {
+  text-align: right;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.tag5 {
+  display: inline-block;
+  background-color: #8c4be6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.titre5 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.etapes5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.etape5 {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.etape5 img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.legende5 {
+  color: #8c4be6;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.section-avenir6 {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.contenu6 {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.numero-page6 {
+  text-align: right;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.tag6 {
+  display: inline-block;
+  background-color: #8c4be6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.titre6 {
+  font-size: 2.5rem;
+  margin: 10px 0 10px;
+}
+
+.sous-titre6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.liste6 {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.liste6 li {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section-contact7 {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.numero-page7 {
+  text-align: right;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.tag7 {
+  display: inline-block;
+  background-color: #8c4be6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.titre7 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.violet7 {
+  color: #8c4be6;
+  text-decoration: none;
+}
+
+.section-contact7 a.violet7:hover {
+  text-decoration: underline;
+}
+
+.section-contact7 h3 {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}

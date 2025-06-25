@@ -1,4 +1,377 @@
-html {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-bg: #fffafa;
+  --color-fonce: #8815e6;
+  --color-clair: #f8e2ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1;
+  /* columns: var(--color-fonce) !important; */
+  font-style: unset;
+}
+
+.content img {
   height: 100%;
+  width: 95%;
+}
+
+nav {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 4em;
+  background-color: white;
+  border-bottom: 0.5vw ridge var(--color-fonce);
+  /* position: fixed;
+  z-index: 1; */
+}
+
+.mockup {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 80%;
+  gap: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  color: black;
+}
+
+.logo-name {
+  color: black;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+button {
+  position: relative;
+  background: none;
+  outline: none;
+  border: 2px solid var(--color-fonce);
+  border-radius: 0.25em;
+  font-size: 17px;
+  color: var(--color-clair);
+  font-family: "Poppins", sans-serif;
+  padding: 0.25em 0.75em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+button span {
+  padding-right: 0.5em;
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--color-clair);
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+button:hover {
+  color: var(--color-bg);
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(/images/lifepilote-hero.jpg);
+}
+.sub-nav {
+  position: relative;
+  right: -25%;
+  width: 75%;
+  padding: 4em;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-fonce);
+}
+
+.sub-nav p:nth-child(1) {
+  width: 30%;
+}
+
+p.primary {
+  font-size: 40px;
+  text-align: right;
+}
+
+footer {
+  width: 100%;
+  height: 20%;
+  padding: 2em 4em 4em 4em;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.slide-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.slide-info > div {
+  flex: 1;
+}
+
+.slide-name p {
+  font-size: 42px;
+  padding: 0%;
+  list-style-type: none;
+}
+
+.year p:nth-child(1),
+.agency p:nth-child(1),
+.role p:nth-child(1),
+.awards p:nth-child(1) {
+  margin-bottom: 2em;
+}
+
+.reseaux-img {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 2vw;
+  justify-content: space-between;
+}
+.reseaux-img img {
+  height: 35px;
+  width: 35px;
+  list-style-type: none;
+}
+
+.name-groupe {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 0.4vw;
+}
+
+.hero-img {
+  position: absolute;
+  right: 4em;
+  bottom: 25%;
+  width: 600px;
+  height: 300px;
+}
+
+.mask {
+  position: absolute;
+  width: 310px;
+  height: 630px;
+  background-image: url(images/mockup-header.svg);
+  background-size: cover;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/hero-name.jpg);
+  color: var(--color-clair);
+  z-index: 10000;
+}
+
+.counter {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 40px;
+  padding: 2em;
+}
+
+.mask:nth-child(1) {
+  clip-path: polygon(0% 0, 0% 0, 0% 100%, 0% 100%);
+}
+
+.mask:nth-child(2) {
+  clip-path: polygon(10% 0, 10% 0, 10% 100%, 10% 100%);
+}
+
+.mask:nth-child(3) {
+  clip-path: polygon(20% 0, 20% 0, 20% 100%, 20% 100%);
+}
+
+.mask:nth-child(4) {
+  clip-path: polygon(30% 0, 30% 0, 30% 100%, 30% 100%);
+}
+
+.mask:nth-child(5) {
+  clip-path: polygon(40% 0, 40% 0, 40% 100%, 40% 100%);
+}
+
+.mask:nth-child(6) {
+  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+}
+
+.mask:nth-child(7) {
+  clip-path: polygon(60% 0, 60% 0, 60% 100%, 60% 100%);
+}
+
+.mask:nth-child(8) {
+  clip-path: polygon(70% 0, 70% 0, 70% 100%, 70% 100%);
+}
+
+.mask:nth-child(9) {
+  clip-path: polygon(80% 0, 80% 0, 80% 100%, 80% 100%);
+}
+
+.mask:nth-child(10) {
+  clip-path: polygon(90% 0, 90% 0, 90% 100%, 90% 100%);
+}
+
+@media (max-width: 900px) {
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .sub-nav {
+    right: 0;
+    width: 100%;
+  }
+
+  p.intro {
+    display: none;
+    color: var(--color-fonce);
+  }
+
+  .slide-name p {
+    font-size: 24px;
+  }
+
+  .awards,
+  .agency {
+    display: none;
+  }
+}
+
+.section-footer {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  background-color: #f8e2ff;
+}
+
+.content img {
+  display: flex;
+  width: 50%;
+  height: 48%;
+}
+
+.content .img {
+  display: flex;
+  width: 50%;
+  height: 200%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .para {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 50%;
+  height: 100%;
+  color: black;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+.colab {
+  height: 60%;
+  width: 55%;
+}
+
+.témoignages {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.témoignages-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 40%;
+  clip-path: ellipse(35% 50%);
+  object-fit: scale-down;
+}
+.colaborateurs {
+  background: black;
+}
+
+.cadre {
+  background: #f8e2ff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.anime {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }

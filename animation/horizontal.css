@@ -1,0 +1,33 @@
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#horizontal .content {
+  height: 100vh;
+  width: 100vw;
+  flex: 0 0 100vw;
+  display: flex;
+  flex-shrink: 0;
+  place-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding: 3vw;
+}
+
+#horizontal {
+  display: flex;
+  color: var(--color-fonction);
+}
+
+#horizontal .content:nth-child(1) {
+  background-color: var(--color-clair);
+}
+#horizontal .content:nth-child(2) {
+  background-color: white;
+}
+#horizontal .content:nth-child(3) {
+  background-color: var(--color-clair);
+}

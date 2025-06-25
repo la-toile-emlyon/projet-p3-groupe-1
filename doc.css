@@ -1,1 +1,16 @@
-/* Le code CSS spécifique à la page de documentation */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/hero-page.jpg);
+}
+
+#contexte {
+  display: flex align-items;
+  left: ;
+}
+
+.cible {
+}
+
+#ciblePersonna {
+}
